@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+
+        <!-- <script src="https://use.fontawesome.com/989e237c37.js"></script> -->
+    </head>
+    <style>
+    body{
+        background-color: white;
+        color: black;
+        /* display: flex; */
+        /* font-size: 16px; */
+    }
+    main div{
+        margin: 20px 0;
+    }
+    header{
+        /* background-color: rgb(190, 181, 181); */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    footer{
+        background-color: rgb(242, 242, 242);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        color: rgba(0, 0, 0, 0.54);
+        overflow: hidden;
+    }
+    .nav-bar ul li{
+        display: inline;
+        padding: 10px;
+        /* overflow-x: hidden; */
+    }
+    .navbar-left{
+        float: left;
+    }
+    .navbar-right{
+        float: right;
+    }
+    body a{
+        color: black;
+        text-decoration: none;
+    }
+    body a:hover{
+        text-decoration: underline;
+    }
+    form{
+        text-align: center;
+    }
+    form input[type='search']{
+        /* display: block; */
+        background-color: transparent;
+        font-size: 18px;
+        width: 500px;
+        height: 50px;
+        border: none;
+        border: 1px #c4bebe solid;
+        border-radius: 100px;
+        margin: 0;
+        padding: 25px;
+        outline: none;
+        /* display: flex;
+        flex: 100%; */
+    }
+    form input[type='search']:hover, form input[type='search']:active{
+        /* display: block; */
+        /* width: 150px;
+        height: 40px; */
+        /* background-color: red; */
+        border: 1px #c4bebe solid;
+        outline: none;
+        /* border-radius: 100px; */
+        /* margin: 0;
+        padding: 0; */
+        /* display: flex;
+        flex: 100%; */
+    }
+    form input[type='submit']{
+        /* display: inline; */
+        /* margin: auto; */
+        background-color: #f2f2f2;
+        color: #5f6368;
+        font-size: 14px;;
+        margin: 11px 4px;
+        padding: 0 16px;
+        border: 1px #f2f2f2 solid;
+        border-radius: 3px;
+        height: 36px;
+    /* min-width: 54px; */
+        text-align: center;
+    }
+    form input[type='submit']:hover{
+        /* display: inline; */
+        color: black;
+        /* margin: 10px;
+        padding: 6px; */
+        border: 1px #c8c7c7 solid;
+    }
+    .google-img-div{
+        /* padding-top: 109px;
+        height: 92px;
+        width: 272px; */
+        /* margin: 50%; */
+        text-align: center;
+    }
+    .google-img{
+        padding-top: 150px;
+        height: 92px;
+        width: 272px;
+        /* margin: 0 50%; */
+    }
+    .sign-in-btn{
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    color: white;
+    font-size: 16px;    
+    margin-right: 10px;
+    }
+    .sign-in-btn a, .sign-in-btn a:hover{
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+    }
+    
+    </style>
+<body>
+    <header>
+            <nav class="nav-bar">
+                <ul class="navbar-left">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                    <!-- <li><a href="#" type="button">Sign In</a></li> -->
+                    <button class="sign-in-btn"><a href="#">Sign In</a></button>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="main">
+       <div class="google-img-div">
+           <img class="google-img" src="googlelogo_color_272x92dp.png" alt="google logo">
+        </div>
+        <form action="#">
+        <!-- <i class="fas fa-search"></i> -->
+        <div>
+           <input type="search">
+        </div>
+        <div>
+           <input type="submit" value="Google Search">
+           <input type="submit" value="I'm Feeling Lucky">
+        </div>
+       </form>
+    </main>
+
+    <footer>
+            <nav class="nav-bar">
+                <ul class="navbar-left">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+    </footer>
+</body>
+</html>
